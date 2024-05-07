@@ -118,10 +118,21 @@ Example: checkPalindrome('taco') should return false.
 
 Complete the exercise in the space below:
 */
+const checkPalindrome = (word) => {
+    let reversed = "";
+    for (let i = word.length -1; i >= 0; i--) {
+        reversed += word[i];
+    }
+
+    if (word === reversed) {
+        return true
+    } else {
+        return false;
+    }
+}
 
 
-
-// console.log('Exercise 7 Result:', checkPalindrome("radar"));
+console.log('Exercise 7 Result:', checkPalindrome("radar"));
 
 /*
 Exercise 8: maxOfThree()
