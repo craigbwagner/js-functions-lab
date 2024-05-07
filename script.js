@@ -98,11 +98,15 @@ Example: reverseString('rockstar') should return the string "ratskcor".
 Complete the exercise in the space below:
 */
 
-// const reverseString = (word) => {
-//
-// }
+const reverseString = (word) => {
+    let reversed = "";
+    for (let i = word.length -1; i >= 0; i--) {
+        reversed += word[i];
+    }
+    return reversed;
+}
 
-//console.log('Exercise 6 Result:', reverseString("rockstar"));
+console.log('Exercise 6 Result:', reverseString("rockstar"));
 
 /*
 Exercise 7: checkPalindrome()
@@ -117,7 +121,7 @@ Complete the exercise in the space below:
 
 
 
-//console.log('Exercise 7 Result:', checkPalindrome("radar"));
+// console.log('Exercise 7 Result:', checkPalindrome("radar"));
 
 /*
 Exercise 8: maxOfThree()
