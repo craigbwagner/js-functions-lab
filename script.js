@@ -277,6 +277,8 @@ Challenge yourself with numArgs. This function should return the count of argume
 Complete the exercise in the space below:
 */
 
+const numArgs = (...values) => {
+    return values.length;
+}
 
-
-//console.log('Exercise 14 Result:', numArgs(1, 2, 3, 4));
+console.log('Exercise 14 Result:', numArgs(1, 2, 3, 4));
