@@ -196,9 +196,21 @@ Example: basicCalculator(10, 5, 'subtract') should return 5.
 Complete the exercise in the space below:
 */
 
+const basicCalculator = (n1, n2, operation) => {
+    switch (operation) {
+        case "add":
+            return n1 + n2;
+        case "subtract":
+            return n1 - n2;
+        case "multiply":
+            return n1 * n2;
+        case "divide":
+            return n1 / n2;
+    }
+}
 
 
-//console.log('Exercise 11 Result:', basicCalculator(10, 5, "subtract"));
+console.log('Exercise 11 Result:', basicCalculator(10, 5, "subtract"));
 
 /*
 Exercise 12: calculateGrade()
