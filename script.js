@@ -250,10 +250,24 @@ Example: createUsername('Samantha', 'Green') should return 'SamGre12'.
 
 Complete the exercise in the space below:
 */
+const firstThreeLetters = (name) => {
+    let letters = name.split('');
+    let shortened = [];
 
+    for (let i=0; i<3; i++) {
+        shortened.push(letters[i]);
+    }
 
+    return shortened.join('');
+}
 
-//console.log('Exercise 13 Result:', createUsername("Samantha", "Green"));
+const createUsername = (firstName, lastName) => {
+    let digits = firstName.length + lastName.length;
+
+    return `${firstThreeLetters(firstName)}${firstThreeLetters(lastName)}${digits}`
+}
+
+console.log('Exercise 13 Result:', createUsername("Samantha", "Green"));
 
 /*
 Exercise 14: numArgs()
